@@ -1,0 +1,19 @@
+name: Build Now
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build
+      run: ./build.ps1
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: binaries
+        path: ~build/deploy/*.zip
