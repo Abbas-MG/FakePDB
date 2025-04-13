@@ -4,7 +4,7 @@
 # Config
 #
 
-$build_llvm = $false #$true
+$build_llvm = $true
 $generate_msvc = $true #$false
 
 #
