@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Build
-      run: ./build_dbg.ps1
+      run: ./build_dbg_msvc.ps1
 
     - name: Create Artifact
       uses: actions/upload-artifact@v4
