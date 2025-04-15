@@ -24,6 +24,7 @@ jobs:
         path: ~build/deploy/*.zip
 
     - name: Create Release
+      id: create_release
       uses: softprops/action-gh-release@v2.2.1
       with:
         tag_name: ${{ inputs.tag }}
